@@ -1,7 +1,7 @@
 use anyhow::Error;
 use log;
-use structopt::StructOpt;
 use std::env;
+use structopt::StructOpt;
 
 #[derive(StructOpt)]
 struct Opt {
@@ -10,7 +10,6 @@ struct Opt {
     // Uncomment if an API Key is needed
     // #[structopt(long, env = "OPENAI_API_KEY", hide_env_values = true)]
     // api_key: String,
-
     #[structopt(subcommand)]
     subcommand: Subcommand,
 }
