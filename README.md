@@ -5,3 +5,9 @@ This repository uses it's own git configuration to define a standard git commit 
 ```bash
 git config --local include.path ../.gitconfig
 ```
+
+## Github Action
+
+A release action is included in this template. It is a manual-dispatch job, so you'll have to manually start the action. This action creates a new Release, compiles the code for MacOS, Linux, and Windows, and publishes the binaries to the release.
+
+Before this action will work, be sure to update Workflow permissions to Read and write permissions. Settings -> Actions -> General -> Workflow permissions
