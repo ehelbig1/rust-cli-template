@@ -1,5 +1,6 @@
 [workspace]
 members = [
     "template-cli",
+    "template-domain",
     "template-api"
 ]

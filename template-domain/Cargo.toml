@@ -1,5 +1,5 @@
 [package]
-name = "template-api"
+name = "template-domain"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,7 +7,5 @@ edition = "2021"
 
 [dependencies]
 async-trait = "0.1.71"
-reqwest = { version = "0.11.18", features = ["json"] }
-serde = { version = "1.0.171", features = ["derive"] }
-serde_json = "1.0.102"
 thiserror = "1.0.43"
+template-api = { path = "../template-api" }
